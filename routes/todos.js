@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var db = require('../models');
 
-
 router.get('/',function (req,res) {
     db.Todo.find()
     .then(function (todos) {
@@ -11,6 +10,10 @@ router.get('/',function (req,res) {
     .catch(function(err) {
         res.send(err);
     })
+});
+
+router.post('/',function (req,res) {
+    
 })
 
 module.exports = router;
