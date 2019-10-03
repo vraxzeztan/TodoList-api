@@ -12,7 +12,7 @@ app.get('/',function (req,res) {
 
 app.use('/api/todos',TodoRoutes);
 
-app.listen(3000,function () {
+app.listen(8000,function () {
     console.log('server running');
 });
 
